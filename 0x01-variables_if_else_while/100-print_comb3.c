@@ -8,21 +8,26 @@
  */
 int main(void)
 {
-int digit;
-int innerDigit;
-for (digit = '0'; digit <= '9'; digit++)
+int digit, innerDigit;
+for (digit = '0'; digit < '9'; digit++)
+{
+for (innerDigit = digit + 1; innerDigit <= '9'; innerDigit++)
+{
+if (innderDigit != digit)
 {
 putchar(digit);
-for ( innerDigit = '1'; innerDigit <= '9'; innerDigit++)
-{
 putchar(innerDigit);
-if (innerDigit != '9')
+if (digit == 'a' && innerDigit == '9')
 {
+continue;
 putchar(',');
 putchar(' ');
+}
 }
 }
 }
 putchar('\n');
 return (0);
 }
+
+

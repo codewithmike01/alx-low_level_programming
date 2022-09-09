@@ -9,13 +9,14 @@
 int main(void)
 {
 int digit;
+int innerDigit;
 for (digit = '0'; digit <= '9'; digit++)
 {
 putchar(digit);
-for ( digit = '1'; digit <= '9'; digit++)
+for ( innerDigit = '1'; innerDigit <= '9'; innerDigit++)
 {
-putchar(digit);
-if (digit != '9')
+putchar(innerDigit);
+if (innerDigit != '9')
 {
 putchar(',');
 putchar(' ');

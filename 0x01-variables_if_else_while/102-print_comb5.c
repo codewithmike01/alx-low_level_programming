@@ -13,11 +13,11 @@ for (digit = 0; digit <= 98; digit++)
 {
 for (innerDigit = digit + 1; innerDigit <= 99; innerDigit++)
 {
-	putchar((p / 10) + '0');
-	putchar((p % 10) + '0');
+	putchar((digit / 10) + '0');
+	putchar((digit % 10) + '0');
 	putchar(' ');
-	putchar((q / 10) + '0');
-	putchar((q % 10) + '0');
+	putchar((innerDigit / 10) + '0');
+	putchar((innerDigit % 10) + '0');
 if (innerDigit == 99 && digit == 98)
 {
 putchar(digit);

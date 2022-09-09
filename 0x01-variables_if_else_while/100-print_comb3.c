@@ -13,21 +13,21 @@ for (digit = '0'; digit < '9'; digit++)
 {
 for (innerDigit = digit + 1; innerDigit <= '9'; innerDigit++)
 {
-if (innderDigit != digit)
+if (innerDigit != digit)
 {
 putchar(digit);
 putchar(innerDigit);
-if (digit == 'a' && innerDigit == '9')
+
+if (digit == '8' && innerDigit == '9')
 {
 continue;
+}
 putchar(',');
 putchar(' ');
 }
 }
-}
-}
-putchar('\n');
-return (0);
-}
 
 
+}
+putchar('\n')
+return (0)

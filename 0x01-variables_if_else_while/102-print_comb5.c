@@ -13,18 +13,18 @@ for (digit = 0; digit <= 98; digit++)
 {
 for (innerDigit = digit + 1; innerDigit <= 99; innerDigit++)
 {
-	putchar((digit / 10) + '0');
-	putchar((digit % 10) + '0');
-	putchar(' ');
-	putchar((innerDigit / 10) + '0');
-	putchar((innerDigit % 10) + '0');
+putchar((digit / 10) + '0');
+putchar((digit % 10) + '0');
+putchar(' ');
+putchar((innerDigit / 10) + '0');
+putchar((innerDigit % 10) + '0');
 if (innerDigit == 99 && digit == 98)
 {
-putchar(digit);
-putchar(innerDigit);
+continue;
+}
 putchar(',');
 putchar(' ');
-}
+
 }
 }
 putchar('\n');

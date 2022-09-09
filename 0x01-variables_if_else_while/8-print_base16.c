@@ -9,13 +9,13 @@
 int main(void)
 {
 int digit;
-char low; 
+char low;
 for (digit = '0'; digit <= '9'; digit++)
 {
 putchar(digit);
 }
 for (low = 'a'; low <= 'f'; low++)
-{ 
+{
 putchar(low);
 }
 putchar('\n');

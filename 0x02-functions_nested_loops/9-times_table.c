@@ -5,7 +5,7 @@
  * Description: It prints 0 times table starting with 0
  * Return: Noting.
  */
-voi times_table(void)
+void times_table(void)
 {
 int i, j, n;
 for (i = 0; i <= 9; i++)

@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * main - check the code 
+ * main - check the code
+ * description: to print out abs
  * Return: Always 0.
  */
 int _abs(int r)

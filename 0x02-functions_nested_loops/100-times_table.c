@@ -5,7 +5,7 @@
  * @n: An input integer value
  * Return: Nothing
  */
-voide print_times_table(int n)
+void print_times_table(int n)
 {
 
 int i, j;

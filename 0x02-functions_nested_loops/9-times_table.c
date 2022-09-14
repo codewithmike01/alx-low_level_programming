@@ -29,8 +29,8 @@ _putchar(' ');
 }
 else
 {
-_putchar( (n / 10) + '0');
-_putchar( (n % 10) + '0');
+_putchar((n / 10) + '0');
+_putchar((n % 10) + '0');
 if (j == 9)
 {
 continue;

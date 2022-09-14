@@ -1,4 +1,4 @@
-#include "mina.h"
+#include "main.h"
 
 /**
  * times_table - Check description

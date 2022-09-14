@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _abs - check the code
  * @r: An integre input
  * Description: This function returns absolute value of a number
  * Return: Absolut value of number r

@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * print-to_98 - Check Main
+ * print_to_98 - Check Main
  * @n: A input integer
- * description: Function that prints all natural numbers
+ * Description: Function that prints all natural numbers
  * from n to 98, following by a new line.
  * Return: Nothing
  */

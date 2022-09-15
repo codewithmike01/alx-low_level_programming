@@ -17,10 +17,11 @@ for (j = 0; j < size; j++)
 if (j < n)
 {
 _putchar(' ');
-}										else
+}
+else
 {
 _putchar('#');
-}										}
+}
 n--;
 _putchar('\n');
 }

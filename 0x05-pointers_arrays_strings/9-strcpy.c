@@ -13,5 +13,5 @@ while (*src)
 {
 *dest++ = *src++;
 }
-return (*aux);
+return (aux);
 }

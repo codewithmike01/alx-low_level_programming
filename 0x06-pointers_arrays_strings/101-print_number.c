@@ -17,10 +17,10 @@ return (base);
 }
 
 /**
- *  * print_number - prints integers enters as parameters using putchar
- *   * @n: integer to print
- *    * Return: void
- *     */
+ * print_number - prints integers enters as parameters using putchar
+ * @n: integer to print
+ * Return: void
+ */
 void print_number(int n)
 {
 int power;
@@ -46,5 +46,6 @@ while (power >= 1)
 _putchar((n / power) + '0');
 n %= power;
 power /= 10;
+}
 }
 }

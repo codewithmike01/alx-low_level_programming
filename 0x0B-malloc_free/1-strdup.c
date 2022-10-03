@@ -36,7 +36,7 @@ new_str[i] = '\0';
 return (start);
 }
 else
-{		
+{
 return (NULL);
 }
 }

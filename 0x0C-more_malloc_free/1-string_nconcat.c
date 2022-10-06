@@ -34,13 +34,13 @@ n = lens2;
 }
 new_str = malloc(lens1 + n + 1);
 if (new_str == NULL)
-{		
+{
 return (NULL);
 }
 for (; i < (lens1 + n); i++)
 {
 if (i < lens1)
-{			
+{
 new_str[i] = *s1, s1++;
 }
 else

@@ -37,7 +37,7 @@ if (old_size > new_size)
 old_size = new_size;
 }
 for (i = 0; i < old_size; i++)
-{		
+{
 new_location[i] = new_ptr[i];
 }
 free(ptr);

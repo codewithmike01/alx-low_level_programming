@@ -1,36 +1,32 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
- * Return: Always 0.
+ * print_listint_safe - A function that prints the elementsin a  list
+ * @head: A pointer to listint_t structure
+ * Return: The number of nodes. Exits with 98 on failure
  */
-int main(void)
+size_t print_listint_safe(const listint_t *head)
 {
-listint_t *head;
-listint_t *head2;
-listint_t *node;
-head2 = NULL;
-add_nodeint(&head2, 0);
-add_nodeint(&head2, 1);
-add_nodeint(&head2, 2);
-add_nodeint(&head2, 3);
-add_nodeint(&head2, 4);
-add_nodeint(&head2, 98);
-add_nodeint(&head2, 402);
-add_nodeint(&head2, 1024);
-print_listint_safe(head2);
+size_t nodes = 0;
+const listint_t *one = head, *two = head;
+if (head == NULL)
+{
+exit(98);
+}
+while (one && two && two->next && head)
+{
+one = one->next;
+two = two->next->next;
+if (one == two)
+{
+printf("-> [%p] %d\n", (void *)head, head->n);
+exit(98);
+}
+printf("[%p] %d\n", (void *)head, head->n);
+head = head->next;
+nodes++;
+}
 head = NULL;
-node = add_nodeint(&head, 0);
-add_nodeint(&head, 1);
-add_nodeint(&head, 2);
-add_nodeint(&head, 3);
-add_nodeint(&head, 4);
-node->next = add_nodeint(&head, 98);
-add_nodeint(&head, 402);
-add_nodeint(&head, 1024);
-print_listint_safe(head);
-return (0);
+return (nodes);
 }

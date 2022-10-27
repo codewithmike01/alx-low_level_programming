@@ -16,7 +16,7 @@ return;
 while (max)
 {
 if (flag == 1 && (n & max) == 0)
-{	
+{
 _putchar('0');
 }
 else if ((n & max) != 0)

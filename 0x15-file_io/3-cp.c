@@ -46,7 +46,7 @@ safe_close(to_fd);
 exit(98);
 }
 else if (_EOF == 0)
-{		
+{
 break;
 }
 bytes_read += _EOF;

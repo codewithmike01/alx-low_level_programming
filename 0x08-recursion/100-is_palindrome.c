@@ -7,7 +7,7 @@ int helper_palindrome(char *s, int len);
 /**
  *_strlen_recursion - A function to obtain the length of the string s
  * @s: A string to calculate length
- * Return: the length of string s
+ * Return: the length of strings
  */
 int _strlen_recursion(char *s)
 {
